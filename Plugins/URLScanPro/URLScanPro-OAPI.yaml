@@ -1,0 +1,37 @@
+openapi: 3.0.0
+
+info:
+    title: URLScanPro
+    description: Perform a lookup on URLs
+    version: "1.0"
+
+servers:
+    - url: https://urlscan.io/api/v1
+
+paths:
+    /scan:
+        get: 
+            operationId: getURLInfo
+            summary: "Lookup the URL info from URLScanPro"
+            parameters:
+                in: query
+                name: url
+                schema:
+                  type: string
+                required: true
+                description: "The URL to perform the lookup on"
+            responses:
+                200:
+                    description: Successful request.
+                    content:
+                      application/json:
+                        schema:
+                          $ref: "#/components/schemas/getURLScanProResponse"
+
+components:
+    schemas:
+        getURLScanProResponse:
+            type: object
+            properties:
+                data:
+                    type: object

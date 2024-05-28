@@ -1,7 +1,14 @@
 Descriptor:
-  Name: 
-  DisplayName: 
-  Description: 
+  Name: "Get URL information"
+  DisplayName: "URLScanPro Lookup"
+  Description: "Get URL information from URLScanPro"
+  SupportedAuthTypes:
+    - ApiKey
+  Authorization:
+    Type: APIKey
+    Key: Key
+    Location: Header
+    AuthScheme: ''
 
 SkillGroups:
   - Format: API
