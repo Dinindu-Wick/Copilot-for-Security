@@ -14,12 +14,12 @@ paths:
             operationId: getURLInfo
             summary: "Lookup the URL info from URLScanPro"
             parameters:
-                in: query
-                name: url
-                schema:
-                  type: string
-                required: true
-                description: "The URL to perform the lookup on"
+                - in: query
+                  name: url
+                  schema:
+                    type: string
+                  required: true
+                  description: "The URL to perform the lookup on"
             responses:
                 200:
                     description: Successful request.
