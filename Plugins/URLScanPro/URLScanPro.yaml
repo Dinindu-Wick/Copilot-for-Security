@@ -13,4 +13,4 @@ Descriptor:
 SkillGroups:
   - Format: API
     Settings:
-      OpenApiSpecUrl: 
+      OpenApiSpecUrl: https://raw.githubusercontent.com/DininduSWick/Copilot-for-Security/main/Plugins/URLScanPro/URLScanPro-OAPI.yaml
