@@ -21,12 +21,12 @@ paths:
                   required: true
                   description: "The URL to perform the lookup on"
             responses:
-                200:
+                "200":
                     description: Successful request.
                     content:
-                      application/json:
-                        schema:
-                          $ref: "#/components/schemas/getURLScanProResponse"
+                        application/json:
+                            schema:
+                                $ref: "#/components/schemas/getURLScanProResponse"
 
 components:
     schemas:
